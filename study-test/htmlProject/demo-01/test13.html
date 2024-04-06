@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            color: white;
+            text-decoration: none;
+        }
+       td{
+            height: 35px;
+            width: 200px;
+        }
+        th{
+            background-color: lightblue;
+        }
+        td{
+            background-color: rebeccapurple;
+            color: white;
+        }
+    </style>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script>
+        $(function (){
+            $(".as td a").click(function (){
+                var str = $(this).parent().parent().children("td").eq(0).text();
+                console.log(str)
+            })
+        })
+    </script>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>id</th>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>操作</th>
+        </thead>
+    <tbody>
+        <tr class="as">
+            <td>1</td>
+            <td>xiaoming</td>
+            <td>12</td>
+            <td><a href="javascript:void(0)">删除</a></td>
+        </tr>
+        <tr class="as">
+            <td>2</td>
+            <td>你好</td>
+            <td>22</td>
+            <td><a href="#">删除</a></td>
+        </tr>
+    </tbody>
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Document</title>
+    <link rel="stylesheet" href="font/iconfont.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            height: 44px;
+            background: #0cc440;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header div{
+            width: 60px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            font-size: 12px;
+        }
+        header div:nth-child(1){
+            border-radius: 12px 0 0 12px;
+            background-color: #63d985;
+            color: white;
+        }
+        header div:nth-child(2){
+            border-radius: 0 12px 12px 0;
+            background-color: #3dd066;
+            color: #a9e4b4;
+        }
+        section{
+            flex: 1;
+            overflow: auto;
+        }
+        section ul{
+            display: flex;
+            position: sticky;
+            top: 0;
+            background-color: white;
+        }
+        section ul li{
+            flex: 1;
+            text-align: center;
+            height: 35px;
+            line-height: 35px;
+            border-bottom: 2px solid #d9d9d9;
+            color:#8c8c8c;
+            font-size: 14px;
+        }
+        section ul li:hover{
+            border-bottom: 2px solid #08c63e ;
+            color: #14bf4d;
+        }
+        section .list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        section .list>div{
+            width: 49%;
+            margin-top: 4px;
+            border: 1px solid gray;
+        }
+        section div p{
+            height: 30px;
+            line-height: 30px;
+            font-size: 12px;
+            text-indent: 4px;
+        }
+        section .list img{
+            width: 49%;
+        }
+        footer{
+            height: 44px;
+            background-color: white;
+        }
+        footer ul{
+            display: flex;
+            height: 100%;
+        }
+        footer ul li{
+            flex: 1;
+            flex-direction: column;
+            justify-content: center;
+            display: flex;
+
+        }
+        footer li:hover{
+            color: #08ca43;
+        }
+        footer ul li i{
+            height: 21px;
+            line-height: 21px;
+            text-align: center;
+        }
+        footer ul li span{
+            height: 17px;
+            font-size: 12px;
+            line-height: 21px;
+            text-align: center;
+        }
+        footer ul li:nth-child(3){
+            position: relative;
+        }
+        footer ul li:nth-child(3) i{
+            width: 50px;
+            height: 50px;
+            border: 1px solid gray;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            margin-left: -25px;
+            line-height: 45px;
+            font-size: 30px;
+            top: -8px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>热点</div>
+        <div>关注</div>
+    </header>
+    <section>
+        <ul>
+            <li>足球现场</li>
+            <li>足球生活</li>
+            <li>足球美女</li>
+        </ul>
+        <div class="list">
+            <div>
+                <img src="img/cc1d8d291ea917c0.png" alt="">
+                <p>大家好大家好</p>
+            </div>
+            <div>
+                <img src="img/cc1d8d291ea917c0.png" alt="">
+                <p>大家好大家好</p>
+            </div>
+            <div>
+                <img src="img/cc1d8d291ea917c0.png" alt="">
+                <p>大家好大家好</p>
+            </div>
+            <div>
+                <img src="img/cc1d8d291ea917c0.png" alt="">
+                <p>大家好大家好</p>
+            </div>
+            <div>
+                <img src="img/cc1d8d291ea917c0.png" alt="">
+                <p>大家好大家好</p>
+            </div>
+            <div>
+                <img src="img/cc1d8d291ea917c0.png" alt="">
+                <p>大家好大家好</p>
+            </div>
+            <div>
+                <img src="img/cc1d8d291ea917c0.png" alt="">
+                <p>大家好大家好</p>
+            </div>
+            <div>
+                <img src="img/cc1d8d291ea917c0.png" alt="">
+                <p>大家好大家好</p>
+            </div>
+            <div>
+                <img src="img/cc1d8d291ea917c0.png" alt="">
+                <p>大家好大家好</p>
+            </div>
+            <div>
+                <img src="img/cc1d8d291ea917c0.png" alt="">
+                <p>大家好大家好</p>
+            </div>
+            <div>
+                <img src="img/cc1d8d291ea917c0.png" alt="">
+                <p>大家好大家好</p>
+            </div>
+            <div>
+                <img src="img/cc1d8d291ea917c0.png" alt="">
+                <p>大家好大家好</p>
+            </div>
+            <div>
+                <img src="img/cc1d8d291ea917c0.png" alt="">
+                <p>大家好大家好</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <i class="iconfont icon-weixin"></i>
+                <span>微信</span>
+            </li>
+            <li>
+                <i class="iconfont icon-weixin"></i>
+                <span>微信</span>
+            </li>
+            <li>
+                <i class="iconfont icon-weixin"></i>
+            </li>
+            <li>
+                <i class="iconfont icon-weixin"></i>
+                <span>微信</span>
+            </li>
+            <li>
+                <i class="iconfont icon-weixin"></i>
+                <span>微信</span>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

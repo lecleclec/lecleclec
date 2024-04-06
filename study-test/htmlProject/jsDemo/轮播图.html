@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .swiper-container{
+            width: 640px;
+            height: 300px;
+            overflow: hidden;
+            margin: 100px auto;
+        }
+        .swiper-container img{
+            width: 640px;
+            height: 300px;
+        }
+        .swiper-slide{
+            float: left;
+        }
+        .swiper-wrapper{
+            width: 9999px;
+            animation: swiperrun 8s linear infinite ;
+        }
+        .swiper-wrapper:hover{
+            animation-play-state: paused;
+        }
+        @keyframes swiperrun {
+            0%{
+                transform: translateX(0);
+            }
+            10%{
+                transform: translateX(-640px);
+            }
+            33%{
+                transform: translateX(-640px);
+            }
+            50%{
+                transform: translateX(-1280px);
+            }
+            66%{
+                transform: translateX(-1280px);
+            }
+            80%{
+                transform: translateX(-1920px);
+            }
+            100%{
+                transform: translateX(-1920px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

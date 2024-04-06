@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        ul>li{
+            background-color: red;
+        }
+        ol{
+            list-style: none;
+        }
+        ol>li{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="box">
+        <ul id="ul">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <ol>
+
+    </ol>
+    </div>
+    
+    
+    </div>
+    
+    <script>
+        window.onload = function(){
+            var all = document.getElementById("all");
+            var box = document.firstElementChild || all.firstChild;
+            var ul = box.firstElementChild || box.firstChild;
+            var ol = box.children[1];
+            var ulNewLi = ul.children[0].cloneNode(true);
+            ul.appendChild(ulNewLi);
+            for(var i = 0; i < ul.children.length-1; i++){
+                var olNewLi = document.createElement("li");
+                olNewLi.innerHTML = i + 1;
+                ol.appendChild(olNewLi)
+        }
+        var olLiArr = ol.children;
+        olLiarr[0].childrenName = "current";
+        }
+    </script>
+</body>
+</html>

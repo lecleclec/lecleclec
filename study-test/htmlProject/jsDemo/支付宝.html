@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="font/iconfont.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 955px;
+            height: 1420px;
+            margin: 0 auto;
+            background: yellow;
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            height: 124px;
+            background: gray;
+            display: flex;
+            background: #232939;
+            color: white;
+        }
+        header .iconfont{
+            width: 118px;
+            height: 124px;
+            line-height: 124px;
+            text-align: center;
+            font-size: 48px;
+        }
+        header span{
+            font-size: 40px;
+            flex: 1;
+            height: 124px;
+            line-height: 124px
+        }
+
+        section{
+            flex: 1;
+            background-color: white;
+        }
+
+        .main{
+            display: flex;
+            height: 278px;
+            background: #232939;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        .main div{
+            width: 120px;
+            height: 168px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: white;
+        }
+        .main div i{
+            font-size: 110px;
+            text-align: center;
+        }
+        .main div span{
+            font-size: 32px;
+            text-align: center;
+        }
+        .list{
+            display: flex;
+            text-align: center;
+            flex-wrap: wrap;
+            background: white;
+        }
+        .list div{
+            width: 25%;
+            height: 208px;
+            border: 1px solid gray;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .list div i{
+            height: 77px;
+            line-height: 77px;
+            font-size: 55px;
+            text-align: center;
+        }
+        .list div span{
+            height: 61px;
+            line-height: 61px;
+            font-size: 44px;
+            text-align: center;
+        }
+        .pic{
+            margin-top: 25px;
+        }
+        .pic img{
+            width: 955px;
+            height: 220px;
+        }
+        footer{
+            height: 128px;
+            display: flex;
+        }
+        footer div{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+        footer div:hover{
+            color: blue;
+        }
+        footer div .iconfont{
+            height: 66px;
+            line-height: 66px;
+            text-align: center;
+            font-size: 58px;
+        }
+        footer div span{
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <header>
+            <i class="iconfont icon-wenjuan"></i>
+            <span>账单</span>
+            <i class="iconfont icon-wode"></i>
+            <i class="iconfont icon-weixin"></i>
+            <i class="iconfont icon-sousuo"></i>
+        </header>
+        <section>
+            <div class="main">
+                <div>
+                    <i class="iconfont icon-saoyisao"></i>
+                    <span>扫一扫</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-saoyisao"></i>
+                    <span>扫一扫</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-saoyisao"></i>
+                    <span>扫一扫</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-saoyisao"></i>
+                    <span>扫一扫</span>
+                </div>
+            </div>
+            <div class="list">
+                <div>
+                    <i class="iconfont icon-youhuiquan1"></i>
+                    <span>钱包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-youhuiquan1"></i>
+                    <span>钱包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-youhuiquan1"></i>
+                    <span>钱包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-youhuiquan1"></i>
+                    <span>钱包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-youhuiquan1"></i>
+                    <span>钱包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-youhuiquan1"></i>
+                    <span>钱包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-youhuiquan1"></i>
+                    <span>钱包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-youhuiquan1"></i>
+                    <span>钱包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-youhuiquan1"></i>
+                    <span>钱包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-youhuiquan1"></i>
+                    <span>钱包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-youhuiquan1"></i>
+                    <span>钱包</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-youhuiquan1"></i>
+                    <span>钱包</span>
+                </div>
+            </div>
+            <div class="pic">
+                <img src="img/cc1d8d291ea917c0.png" alt="">
+            </div>
+        </section>
+        <footer>
+            <div>
+                <i class="iconfont icon-weixin"></i>
+                <span>支付宝</span>
+            </div>
+            <div>
+                <i class="iconfont icon-weixin"></i>
+                <span>支付宝</span>
+            </div>
+            <div>
+                <i class="iconfont icon-weixin"></i>
+                <span>支付宝</span>
+            </div>
+            <div>
+                <i class="iconfont icon-weixin"></i>
+                <span>支付宝</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

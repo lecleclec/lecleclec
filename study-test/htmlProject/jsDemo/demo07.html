@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 16px;
+        }
+        div{
+            width: 46.875rem;
+            height: 6.25rem;
+            background-color: yellow;
+            box-sizing: border-box;
+            width: 20%;
+            border: .0625rem solid red;
+        }
+        @media  screen and (orientation:portrait) and (max-width:18.75rem){
+            div{
+                width:33.3%
+            }
+        }
+        @media  screen and (orientation:landscape) and (max-height:37.5rem){
+            div{
+                width:33.3%
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <script>
+        document.documentElement.style.fontSize=document.documentElement.
+        clientWidth/750*20+'px'
+    </script>
+</body>
+</html>
