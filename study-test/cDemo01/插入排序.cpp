@@ -40,3 +40,17 @@ void select_sort(int arr[],int len){
         swap(&arr[i],&arr[min]);
     }
 }
+//希尔排序
+void shell_sort(int arr[],int len){
+    int gap,i,j;
+    int temp;
+    for(gap=len>>1;gap>0;gap>>=1){//gap等于len/2,每次循环gap都除以2
+        for(i=gap;i<len;i++){//执行插入排序，
+            temp=arr[i];
+            for(j=i-gap;j>=0&&arr[j]>temp;j-=gap){
+                arr[j+gap]=arr[j];
+            }
+            arr[j+gap]=temp;
+        }
+    }
+}
