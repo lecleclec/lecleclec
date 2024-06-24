@@ -6,6 +6,49 @@
     <title>hello</title>
 </head>
 <body>
+    <div id="app">
+        <a v-bind:href="url">链接</a>
+        <input type="text" v-model="url">
+        <input type="text" v-model="message"><!-- v-model是指令 -->
+        {{message}}
+        <br>
+        <input type="button" value="按钮1" v-on:event="handle">
+        <input type="button" value="按钮1" @click="handle()">
+        <br>
+        年龄<input type="text" v-model="age">经判定：
+        <br>
+        <span v-if="age<=35">年轻人</span>
+        <span v-else-if="35&&age<60">中年人</span>
+        <span v-else>老年人</span>
+    </div>
     
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            age:20
+        }
+    })
+   /*  new Vue({
+        el:'#app',
+        data:{
+            message:'Hello Vue!',
+            url:"https://www.baidu.com"
+        },
+        methods: {
+            handle:function(){
+                alert("被点击了！");
+            },
+            handle1:function(){
+                alert("1被点击了！");
+            },
+            handle2:function(){
+                alert("2被点击了！");
+            }
+        },
+    }) */
+</script>
 </html>
