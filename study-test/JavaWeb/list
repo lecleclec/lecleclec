@@ -1,0 +1,42 @@
+{
+    "code":1,
+    "message":"success",
+    "data":[
+        {
+            "id":1,
+            "name":"周雪",
+            "image":"1.jpg",
+            "gender":0,
+            "job":"班主任",
+            "entrydate":"2008-02-09",
+            "updatetime":"2022-10-01 12:00:00"
+        },
+        {
+            "id":2,
+            "name":"常乐",
+            "image":"2.jpg",
+            "gender":0,
+            "job":"学习委员",
+            "entrydate":"2008-03-09",
+            "updatetime":"2022-10-01 16:00:00"
+        },
+        {
+            "id":3,
+            "name":"窦焕森",
+            "image":"3.jpg",
+            "gender":1,
+            "job":"生活委员",
+            "entrydate":"2008-05-09",
+            "updatetime":"2022-10-01 15:00:00"
+        },
+        {
+            "id":4,
+            "name":"张三",
+            "image":"4.jpg",
+            "gender":1,
+            "job":"团支书",
+            "entrydate":"2008-01-09",
+            "updatetime":"2022-10-01 13:00:00"
+        }
+    ]
+}

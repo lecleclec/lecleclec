@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="" />
+    </head>
+    <body>
+        
+        <input type="button" name="" id="" value="获取数据GET" onclick="get()">
+        <input type="button" name="" id="" value="删除数据GET" onclick="post()">
+
+
+    </body>
+    <script src="../js/axios.min.js" type="text/javascript" charset="UTF-8"></script>
+    <script>
+        function get(){
+            //通过axios发送异步请求-get
+            // axios({
+            //     method:"get",
+            //     url:""
+            // }).then((result)=>{
+            //     console.log(result.data);
+            // })
+
+            axios.get("https://yapi.pro/mock/431313/user/list").then((result)=>{
+                console.log(result.data);
+            })
+
+        }
+        
+        function post(){
+            //通过axios发送异步请求-post
+            // axios({
+            //     method:"post",
+            //     url:"网络地址",
+            //     data:"id=1"
+            // }).then((result)=>{
+            //     console.log(result.data);
+            // })
+
+            axios.get("网络http地址","id=1").then((result)=>{
+                console.log(result.data);
+            })
+
+        }
+    </script>
+</html>

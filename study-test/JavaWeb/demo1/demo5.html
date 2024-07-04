@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="app">
+            <table border="1" cellspacing="0" align="center">
+            <tr v-for="(item, index) in emps" :key="index">
+                <td>{{item.name}}</td>
+                <td>{{item.age}}</td>
+                <td>{{item.gender}}</td>
+                <td><img v-bind:src="item.image" width="70px" height="50px" alt="头像"></td>
+            </tr>
+        </table>
+        </div>
+        
+    </body>
+    <script src="../js/vue.js"></script>
+    <script src="../js/axios.min.js"></script>
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+                emps:[]
+            },
+            mounted(){
+                    //发送异步请求，加载数据
+                    axios.get("https://yapi.pro/mock/431313/user/list").then((result)=>{
+                    this.emps = result.data.data;
+                })
+
+            }
+        })
+    </script>
+</html>
